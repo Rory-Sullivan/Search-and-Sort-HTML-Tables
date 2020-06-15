@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <title>Search and Sort</title>
+</head>
+
+<body>
+  <div class="container py-5">
+    <h1>Search and Sort HTML Tables</h1>
+    <p>
+      Try clicking on the headers to sort the table and use the search box to
+      filter the table.
+    </p>
+
+    <div class="form-inline flex-row-reverse mb-3">
+      <input class="searchInput form-control" data-table-id="table1" type="search" placeholder="Search"
+        aria-label="Search" aria-target="table1">
+    </div>
+
+    <table class="sortTable table" id="table1">
+      <thead>
+        <tr>
+          <th scope="col" data-type="number"># <span class="ml-1 "></span></th>
+          <th scope="col">Name <span class="ml-1 "></span></th>
+          <th scope="col" data-type="number">Status <span class="ml-1 "></span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Michael</td>
+          <td data-sort-value="3">Red</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Joshua</td>
+          <td data-sort-value="2">Yellow</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Tim</td>
+          <td data-sort-value="1">Green</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>John</td>
+          <td data-sort-value="3">Red</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Bob</td>
+          <td data-sort-value="2">Yellow</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Anne</td>
+          <td data-sort-value="1">Green</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Michelle</td>
+          <td data-sort-value="3">Red</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>Jane</td>
+          <td data-sort-value="2">Yellow</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>Claire</td>
+          <td data-sort-value="1">Green</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>Geraldine</td>
+          <td data-sort-value="3">Red</td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <h4>Sorting</h4>
+    <p>
+      Clicking a header once will sort the table in ascending order based on the
+      appropriate column, clicking the header again will reverse the order of
+      the table.
+    </p>
+    <p>
+      If multiple sorts are performed the ordering of previous sorts are
+      preserved. In other words if you sort the table by name and then sort it
+      by status the table will be sorted first based on status then
+      alphabetically by name.
+    </p>
+    <p>
+      Notice that sorting by status does not sort alphabetically. This is due to
+      hidden values that tell the sort function the appropriate ordering.
+    </p>
+
+    <div class="my-5 w-100"></div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+
+  <script src="./scripts/searchTable.js"></script>
+  <script src="./scripts/sortTable.js"></script>
+</body>
+
+</html>
