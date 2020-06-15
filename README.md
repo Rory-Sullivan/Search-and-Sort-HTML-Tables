@@ -18,14 +18,14 @@ to be visible on the page.
 ## Installation and usage
 
 Download the [latest version](https://github.com/Rory-Sullivan/Search-and-Sort-HTML-Tables/releases)
-into your project (put it wherever you keep your static files or packages). Add
-the following scripts to the page containing the table you wish to sort or
+into your project (unpack it wherever you keep your static files or packages).
+Add the following scripts to the page containing the table you wish to sort or
 search (make sure to add the local path to the scripts). Put the script
 somewhere after the table, usually just before the closing body tag.
 
 ```html
-<script src="./LOCAL_PATH/Search-and-Sort-HTML-Tables/scripts/searchTable.js"></script>
-<script src="./LOCAL_PATH/Search-and-Sort-HTML-Tables/scripts/sortTable.js"></script>
+<script src="./LOCAL_PATH/scripts/searchTable.js"></script>
+<script src="./LOCAL_PATH/scripts/sortTable.js"></script>
 ```
 
 Use the example table provided in the example folder to build up your table or,
