@@ -15,7 +15,7 @@ working example.
 Note that this package will not work with paginated tables, the whole table has
 to be visible on the page.
 
-## Installation and usage
+## Installation and Usage
 
 Download the [latest version](https://github.com/Rory-Sullivan/Search-and-Sort-HTML-Tables/releases)
 into your project (unpack it wherever you keep your static files or packages).
