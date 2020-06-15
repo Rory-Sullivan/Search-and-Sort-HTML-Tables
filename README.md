@@ -1,7 +1,9 @@
 # Search and Sort HTML Tables
 
 A simple and easy way to add sorting and search/filter functionality to your
-HTML table. See [here](INSERT_LINK) for a working example.
+HTML table. See
+[here](https://rory-sullivan.github.io/Search-and-Sort-HTML-Tables/) for a
+working example.
 
 ## Features
 
